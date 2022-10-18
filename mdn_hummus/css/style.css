@@ -1,0 +1,92 @@
+body,html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+  width: 100%;        
+}
+/* чтобы охватить 100% внешнего контейнера (в этом случае <body>). */
+
+
+
+li {
+  display: inline;
+}
+/* задаём свойству display значение inline, что приводит к тому, что элементы списка располагаются в одной строке друг с другом — теперь они ведут себя как строчные элементы. */
+
+
+
+a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  /* устанавливаем display на inline-block — элементы <a> являются строчными по умолчанию и, поскольку мы не хотим чтобы они вываливались на свои собственные строки как если бы это получалось со значением block, мы хотим иметь возможность менять их размер. inline-block позволяет нам делать это. */
+
+  width: 32%;
+  margin-right: 0%;
+
+  text-align: center;
+  line-height: 2;
+  color: black;
+  border: 2px solid black;
+}
+
+li:last-child a {
+  margin-right: 0;
+} 
+/* выбирает только последний <a> в списке и удаляет его margin. */
+
+
+a:link, a:visited, a:focus {
+  background: rgb(179, 145, 241);
+}
+
+a:hover {
+  background: rgb(108, 105, 182);
+}
+
+a:active {
+  background: rgb(12, 164, 156);
+  color: white;
+}
+
+
+
+
+
+
+/* registration */
+
+form {
+  display: table;
+  margin: 0 auto;
+}
+
+form div {
+  display: table-row;
+}
+
+form label, form input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+form label {
+  width: 200px;
+  padding-right: 5%;
+  text-align: right;
+}
+
+form input {
+  width: 300px;
+}
+
+form p {
+  display: table-caption;
+  caption-side: bottom;
+  width: 300px;
+  color: #999;
+  font-style: italic;
+}
