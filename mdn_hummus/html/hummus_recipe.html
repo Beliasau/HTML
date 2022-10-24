@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Quick hummus recipe</title>
-  </head>
-  <body>
-
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Recipe</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg fixed-top bg-secondary ">
+			<div class="container-fluid">
+			  <a class="navbar-brand p-0" href="all_recipes.html">
+				<img src="../img/My Recipe.png" alt="logo" width="150"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="all_recipes.html">Все рецепты</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="video_recipes.html">Видеорецепты</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="photo_gallery.html">Фотогалерея</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Выпадающий список
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li><a class="dropdown-item" href="#">Действие</a></li>
+					  <li><a class="dropdown-item" href="#">Другое действие</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="registration.html ">Вход</a>
+				  </li>
+				</ul>
+				<form class="d-flex" role="search">
+				  <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+				  <button class="btn btn-success" type="submit">Поиск</button>
+				</form>
+			  </div>
+			</div>
+		  </nav>
 	
-	<nav>
-<ul>
-	<li><a href="all_recipes.html">все рецепты</a></li>
-	<li><a href="video_recipes.html">видеорецепты</a></li>
-	<li><a href="photo_gallery.html">фотогалерея</a></li>
-	<li><a href="registration.html">регистрация</a></li>
-</ul>
-
-
-<form>
-	<input type="search" name="q" placeholder="Search query">
-	<input type="submit" value="Go!">
-</form>
-	</nav>
-
+	<br><br><br>
 
 
 
@@ -127,11 +158,20 @@ title="этот текст появился только из-за того, ч�
 
 
 
-<br>
-<br>
-<footer>
-	<p>©Авторские права  принадлежат Александру, 2050. Все права защищены.</p>
-  </footer>
+	<br><br><br>
 
+    <footer class=" bg-secondary ">
+        <p>©Авторские права  принадлежат Александру, 2050. Все права защищены.</p>
+        Контакты
+        <ul>
+            <li><a href="https://www.linkedin.com/in/aliaksandr-beliasau" class="link-dark">linkedin</a></li>
+            <li><a href="https://github.com/Beliasau" class="link-dark">github</a></li>
+            <li>&#9742  +375297496386</li>
+        </ul>
+        <br>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
   </body>
 </html>
