@@ -1,9 +1,24 @@
- /* body,html {
-  margin: 0;
+ body,html {
+  margin-top: 40px;
   font-family: sans-serif;
-  background-color: rgb(64, 75, 85);
-  text-align: center;
-} */
+  background-color: rgb(205, 205, 206);
+  /* text-align: center; */
+}
+
+
+
+/* footer */
+.bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+
 
  /* /ul { 
   padding: 0;
@@ -87,16 +102,15 @@ form label {
   font-style: italic;
 } */
 
-.reg{
+/* .reg{
   width: 30%;
  
-}
+} */
 
-form{
-  text-align: center;
-  border: 3px solid;
-  background-color: rgb(102, 184, 239);
-  border-radius: 1%;
+
+ 
+
   
 
-}
+
+

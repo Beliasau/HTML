@@ -10,6 +10,22 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
+          .card{
+            border-radius: 1em;
+            text-align: center;
+            padding: 1em;
+          }
+          .card:hover{
+            background-color: rgb(228, 167, 228);
+          }
+          .card img{
+            border-radius: 2em;
+            width: 80%;
+            margin: auto;
+          }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg fixed-top bg-secondary ">
@@ -53,20 +69,121 @@
             </div>
           </nav>
     
-    <br><br><br>
+
+
+
+<div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
    
+    <div class="col">
+      <div class="card" >
+      <img src="../img/hummus.jpg" class="card-img-top" alt="hummus">
+      <div class="card-body">
+        <h5 class="card-title">Hummus recipe</h5>
+        <p class="card-text">is a Middle Eastern dip, spread, or savory dish made from cooked, mashed chickpeas blended with tahini, lemon juice, and garlic. The standard garnish in the Middle East includes olive oil, a few whole chickpeas, parsley, and paprika</p>
+        <a href="hummus_recipe.html" class="btn btn-primary">Read the recipe</a>
+      </div>
+      </div>
+    </div>
+    
+    <div class="col" >
+      <div class="card" >
+      <img src="../img/borsch.jpg" class="card-img-top" alt="borsch">
+      <div class="card-body">
+        <h5 class="card-title">Борщ</h5>
+        <p class="card-text">Горячий заправочный суп на основе свёклы, которая придаёт ему характерный красный цвет. Традиционное блюдо восточных славян, основное первое блюдо украинской кухни</p>
+        <!-- <a href="" class="btn btn-primary">Читать рецепт</a> -->
+        
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Читать рецепт</button>
 
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="../img/apple-touch-icon.png" class="rounded me-2" alt="Карпа́ччо">
+              <strong class="me-auto">опачьки</strong>
+              <small>!!!</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+            </div>
+            <div class="toast-body">
+              А ссылки тут НЕТ
+            </div>
+          </div>
+        </div>
+              </div>
+              </div>
+            </div>
+    
+    <div class="col">
+      <div class="card" >
+      <img src="../img/OLIVIE.jpeg" class="card-img-top" alt="Olivie">
+      <div class="card-body">
+        <h5 class="card-title">Оливье</h5>
+        <p class="card-text">Оливье́ — популярный в России салат. Традиционное блюдо новогоднего стола. Придуман в московском ресторане «Эрмитаж», которым с 1860-х до 1883 года руководил Люсьен Оливье</p>
+        <a href="" class="btn btn-primary">Читать рецепт</a>
+      </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card " >
+      <img src="../img/karpachho.jpg" class="card-img-top" alt="Karpachcho">
+      <div class="card-body">
+        <h5 class="card-title">Карпаччо</h5>
+        <p class="card-text">Карпа́ччо (итал. Carpaccio) — блюдо из тонко нарезанных кусочков сырой говяжьей вырезки, приправленной соусом на основе оливкового масла и лимонa.
+          Традиционно подаётся как холодное блюдо или закуска.</p>
+        <a href="" class="btn btn-primary">Читать рецепт</a>
+      </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card " >
+      <img src="../img/pelmen.jpg" class="card-img-top" alt="Pelmeni">
+      <div class="card-body">
+        <h5 class="card-title">Пельмени</h5>
+        <p class="card-text">блюдо, распространённое в традиционной кухне народов Северной Евразии: русской, удмуртской, коми и некоторых других финно-угорских народов. Изготавливаются в виде термически обработанных изделий из пресного теста с начинкой из рубленого мяса или рыбы.</p>
+        <!-- <a href="" class="btn btn-primary">Читать рецепт</a> -->
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card " >
+      <img src="../img/drannnik.jpg" class="card-img-top" alt="DRANNNIK">
+      <div class="card-body">
+        <h5 class="card-title">Драники</h5>
+        <p class="card-text">популярное блюдо европейской кухни. Картофельные блины и оладьи можно встретить практически везде, где в пищу употребляется картофель — от Латинской Америки до Северной Европы, в частности, белорусской (белор. дранiкi), украинской (укр. деруни), русской, польской, немецкой и еврейской кухнях.</p>
+        <!-- <a href="" class="btn btn-primary">Читать рецепт</a> -->
+        <button class="btn btn-primary" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          <span class="visually-hidden">Загрузка...</span>
+        </button>
+        <button class="btn btn-primary" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Загрузка...
+        </button>
+         
+      </div>
+      </div>
+    </div>
+    
+   
+    
+   
+    
+    
+   
+    
+  </div>
+</div>
+    
 
-    <h1><a href="hummus_recipe.html">Quick hummus recipe</a> </h1>
-
-    <dl>
-        <dt>HUMMUS</dt>
-        <dd>is a Middle Eastern dip, spread, or savory dish made from cooked, mashed chickpeas blended with tahini, lemon juice, and garlic. The standard garnish in the Middle East includes olive oil, a few whole chickpeas, parsley, and paprika.</dd>
-        <br>
-        <dd>In Middle Eastern cuisine, it is usually eaten as a dip, with pita bread. In the West, it is now produced industrially, and is often served as a snack or appetizer with crackers.</dd>
-
-    </dl>
-    <br><br><br>
+    
 
     <footer class=" bg-secondary ">
         <p>©Авторские права  принадлежат Александру, 2050. Все права защищены.</p>
@@ -81,5 +198,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+<script>const toastTrigger = document.getElementById('liveToastBtn')
+  const toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', () => {
+      const toast = new bootstrap.Toast(toastLiveExample)
+  
+      toast.show()
+    })
+  }</script>
 </body>
 </html>
