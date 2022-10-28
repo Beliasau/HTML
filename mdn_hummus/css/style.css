@@ -1,5 +1,5 @@
  body,html {
-  margin-top: 40px;
+  margin-top: 50px;
   font-family: sans-serif;
   background-color: rgb(205, 205, 206);
   /* text-align: center; */
@@ -12,7 +12,32 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  /* margin-top: 50px; */
 }
+
+
+/* card all recipes */
+.card{
+  border-radius: 1em;
+  text-align: center;
+  padding: 1em;
+}
+.card:hover{
+  background-color: rgb(228, 167, 228);
+}
+.card img{
+  border-radius: 2em;
+  width: 80%;
+  margin: auto;
+  /* padding: auto; */
+}
+
+/* card photogallery */
+.photo:hover{
+  width: 102%;
+  background-color: rgb(236, 242, 209);
+}
+
 
 
 
