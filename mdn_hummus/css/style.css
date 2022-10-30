@@ -36,6 +36,8 @@
 .photo:hover{
   width: 102%;
   background-color: rgb(236, 242, 209);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 0.4em;
 }
 
 
