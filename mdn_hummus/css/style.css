@@ -16,128 +16,90 @@
 }
 
 
+
+
 /* card all recipes */
-.card{
+.card-ind{
   border-radius: 1em;
   text-align: center;
   padding: 1em;
 }
+
+
 .card:hover{
   background-color: rgb(228, 167, 228);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.card img{
+
+.card-ind img{
   border-radius: 2em;
   width: 80%;
+  /* height: 200px; */
   margin: auto;
   /* padding: auto; */
 }
 
+
+
+
+
 /* card photogallery */
+
+.scrool{
+  height: 500px;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 3px solid;
+  border-radius: 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 0.3em;
+}
+
 .photo:hover{
-  width: 102%;
+  /* width: 102%; */
   background-color: rgb(236, 242, 209);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 0.4em;
 }
 
-
-
-
-
-
-
-
- /* /ul { 
-  padding: 0;
-  width: 100%;    
-  background-color: #999;   
-  margin: 0px;   */
-/* } */
-/* чтобы охватить 100% внешнего контейнера (в этом случае <body>). */
-
-
-/* задаём свойству display значение inline, что приводит к тому, что элементы списка располагаются в одной строке друг с другом — теперь они ведут себя как строчные элементы. */
-
-
-/* 
-a {
-  outline: none;
-  text-decoration: none;
-  display: inline-block; */
-  /* устанавливаем display на inline-block — элементы <a> являются строчными по умолчанию и, поскольку мы не хотим чтобы они вываливались на свои собственные строки как если бы это получалось со значением block, мы хотим иметь возможность менять их размер. inline-block позволяет нам делать это. */
-
-  /* width: 32%;
-  margin-right: 0%;
-
-  text-align: center;
-  line-height: 2;
-  color: black;
-  border: 2px solid black;
+.photo img{
+  border-radius: 50%;
+  width: 100%;
+  /* height: 100%; */
+  margin: auto;
+  /* padding: auto; */
 }
 
-li:last-child a {
-  margin-right: 0; */
-/* }  */
-/* выбирает только последний <a> в списке и удаляет его margin. */
-/* 
-
-a:link, a:visited, a:focus {
-  background: rgb(179, 145, 241);
+.photo{
+  border-radius: 50%;
 }
 
-a:hover {
-  background: rgb(108, 105, 182);
+.btn-ph{
+  border-radius: 50%;
 }
 
-a:active {
-  background: rgb(12, 164, 156);
-  color: white; */
-/* } */
-
-
-
-
+.img-gall img{
+  height: 250px;
+  border-radius: 50%;
+}
+  
 
 
 /* registration */
 
-/* form {
-  display: table;
-  margin: 0 auto; 
-}  */
-/* 
-form div {
-  display: table-row;
-}
-
-form label, form input {
-  display: table-cell;
-  margin-bottom: 10px;
-}
-
-form label {
-  width: 200px;
-  padding-right: 5%;
-  text-align: right;
-} */ 
-
-/* form p {
-  display: table-caption;
-  caption-side: bottom;
-  width: 300px;
-  color: #999;
-  font-style: italic;
-} */
-
-/* .reg{
-  width: 30%;
- 
-} */
-
-
- 
-
-  
-
-
-
+.reg{
+  text-align: center;
+  border: 3px solid;
+  background-color: rgb(146, 144, 144);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  }
+.field{
+  width: 80%;
+  margin: 10%;
+ }
